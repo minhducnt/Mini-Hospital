@@ -1,0 +1,65 @@
+﻿-- Tạo quyền
+Create role manager
+--Cấp quyền trên các bảng
+grant select,update,insert,delete on HoSoBenhNhan to manager
+grant select,update,insert,delete on CapPhatThuoc to manager
+grant select,update,insert,delete on Thuoc to manager
+grant select,update,insert,delete on Phong to manager
+grant select,update,insert,delete on NoiTruDieuTri to manager
+grant select,update,insert,delete on ThoiDiemKhamBenh to manager
+grant select,update,insert,delete on NhanVien to manager
+grant select,insert,delete,update on Loaithuoc to manager
+grant select,insert,delete,update on TaiKhoan to manager
+-- Cấp quyền trên proc
+grant exec,alter on sp_DanhSachBenhNhan to manager
+grant exec,alter on sp_DanhSachDoTuoiBenhNhan to manager
+grant exec,alter on sp_DanhSachHoSoHetHan to manager
+grant exec,alter on sp_DanhSachNhanVien to manager
+grant exec,alter on sp_DanhSachNhanVienTheoChucVu to manager
+grant exec,alter on sp_DanhSachThuocTrongMoiLoai to manager
+grant exec,alter on sp_DSCapThuocTheoThoiGian to manager
+grant exec,alter on sp_LocDuLieu to manager
+grant exec,alter on sp_NhapHoSoKhamBenh to manager
+grant exec,alter on sp_NhapNhanVien to manager
+grant exec,alter on sp_NhapPhong to manager
+grant exec,alter on sp_NhapThuoc to manager
+grant exec,alter on sp_SapXepNhanVienTheoTen to manager
+grant exec,alter on sp_SuaCapPhatThuoc to manager
+grant exec,alter on sp_SuaHoSoKhamBenh to manager
+grant exec,alter on sp_SuaNhanVien to manager
+grant exec,alter on sp_SuaThoiDiemKham to manager
+grant exec,alter on sp_ThongTinCaPhatThuocChoBenhNhan to manager
+grant exec,alter on sp_XoaCapPhatThuoc to manager
+grant exec,alter on sp_XoaHoSoBenhNhan to manager
+grant exec,alter on sp_XoaNhanVien to manager
+grant exec,alter on sp_XoaPhong to manager
+grant exec,alter on sp_XoaThoiDiemKhamBenh to manager
+grant exec,alter on sp_DanhSachCapPhatThuoc to manager
+grant exec,alter on sp_DanhSachNoiTruDieuTri to manager
+grant exec,alter on sp_DanhSachPhong to manager
+grant exec,alter on sp_DanhSachThoiDiemKhamBenh to manager
+grant exec,alter on sp_LocTheoThoiGian to manager
+grant exec,alter on sp_NhapNoiTruDieuTri to manager
+grant exec,alter on sp_SuaNoiTruDieuTri to manager
+grant exec,alter on sp_SuaThongTinPhong to manager
+grant exec,alter on sp_SuaThuoc to manager
+grant exec,alter on sp_ThemCapPhatThuoc to manager
+grant exec,alter on sp_ThemThoiDiemKham to manager
+grant exec,alter on sp_XoaHoSoBenhNhan to manager
+--Cấp quền trên function
+grant select,alter on HSF_PhanTramDenKham to manager
+grant select,alter on HSF_TimKiemHoSoBenhNhan to manager
+grant select,alter on PF_SoLuongGiuong to manager
+grant select,alter on TF_SLYTaTrucPhong to manager
+grant select,alter on TF_TimKiemNhanVien to manager
+grant select,alter on TF_TimKiemPhong to manager
+grant select,alter on TF_TimKiemThuoc to manager
+grant exec,alter on KT_CapPhatThuoc to manager
+grant exec,alter on KT_HoSoKhamBenh to manager
+grant exec,alter  on KT_Phong to manager
+grant exec,alter  on KT_ThoiDiemKham to manager
+grant exec,alter  on KT_Thuoc to manager
+grant exec,alter on dbo.KT_NhanVien to manager
+grant exec,alter on TF_SLYTaTrucPhong to manager
+grant exec,alter on TF_LayMaTheoTen to manager
+grant exec,alter on KT_NoiTruDieuTri to manager
