@@ -1,2 +1,2 @@
-# Mini-Hospital
-Desktop App for Mini Hospital
+# Clinic Management System
+Desktop App for Clinic Management
